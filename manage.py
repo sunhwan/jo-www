@@ -9,3 +9,16 @@ Bootstrap(app)
 @app.route("/")
 def hello():
     return render_template('hello.html')
+
+@app.route("/apps")
+def apps():
+    return render_template('hello.html')
+
+@app.route("/publications")
+def publications():
+    return render_template('hello.html')
+
+@app.route("/about")
+def about():
+    return render_template('hello.html')
+

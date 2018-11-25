@@ -1,5 +1,101 @@
 {% extends "bootstrap/base.html" %}
 
+{% block styles %}
+{{super()}}
+<style>
+    body {
+        font-family: 'Avenir Next', 'HelveticaNeue-Light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-size: 1.125em;
+    }
+
+    a {
+        text-decoration: underline;
+    }
+
+    #masthead-background {
+        height: 165px;
+        background-color: #372312;
+        margin-bottom: -165px;
+        border-top: 3px solid #b59575;
+    }
+
+    .main {
+        width: 640px;
+        margin: auto;
+    }
+
+    #masthead {
+        width: 300px;
+        font-size: 0.9em;
+        color: #f1e0d4;
+    }
+
+    #masthead h1 {
+        font-weight: normal;
+        font-size: 2em;
+        margin-top: 0;
+        padding-top: 0.5em;
+        margin-bottom: 0.25em;
+    }
+
+    #masthead h1 a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    #masthead p {
+        margin: 0;
+        padding: 0;
+    }
+
+    #masthead nav {
+        display: block;
+        margin: 0;
+        padding: 1em 0;
+        color: #5c3b1e;
+    }
+
+    #masthead a {
+        color: #b59575;
+    }
+
+    #post {
+        width: 640px;
+        margin: auto;
+    }
+</style>
+{% endblock %}
+
+{% block navbar %}
+<!-- below is copied from marco.org -->
+<div id="masthead-background"></div>
+<div class="container main">
+    <div id="masthead">
+        <h1><a href="/">sunhwanj.com</a></h1>
+        <div>
+            <p id="description">
+                I&rsquo;m <a href="/about" rel="author">Sunhwan Jo</a>:
+                a programmer, scientist, writer, and geek.
+            </p>
+
+            <nav>
+                <a href="/apps">Apps</a>
+                &bull;
+                <a href="/publications">Publications</a>
+                &bull;
+                <a href="https://twitter.com/sunhwan">Twitter</a>
+                &bull;
+                <a href="/about">About</a>
+            </nav>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
 {% block content %}
-Hello World!
+<div class="container main">
+    <div id="post">
+        Hello World!
+    </div>
+</div>
 {% endblock %}
