@@ -3,3 +3,4 @@ gunicorn
 Flask-Bootstrap4
 pyyaml
 markdown
+dateparser

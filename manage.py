@@ -1,9 +1,13 @@
+import os
+
 from flask import Flask
 from flask import render_template
+from flask import abort
 
 from flask_bootstrap import Bootstrap
 import yaml
 import markdown
+import dateparser
 
 app = Flask(__name__)
 Bootstrap(app)
@@ -14,8 +18,29 @@ md = markdown.Markdown(extensions = ['meta'])
 def hello():
     posts = yaml.load(open("entries/entries.yaml").read())
     for post in posts:
-        post['content'] = md.convert(open("entries/%s" % post['filename']).read())
+        date = dateparser.parse(post['date'])
+        path = 'entries/%s/%s/%s/%s.md' % (date.year, date.month, date.day, post['filename'])
+        post['content'] = md.convert(open(path).read())
+        post['year'] = date.year
+        post['month'] = date.month
+        post['day'] = date.day
     return render_template('posts.html', posts=posts)
+
+@app.route("/<year>/<month>/<day>/<filename>")
+def post(year, month, day, filename):
+    path = 'entries/%s/%s/%s/%s.md' % (year, month, day, filename)
+    post = {}
+    if os.path.exists(path):
+        post['content'] = md.convert(open(path).read())
+        post['date'] = md.Meta['date'].pop()
+        date = dateparser.parse(post['date'])
+        post['title'] = md.Meta['title'].pop()
+        post['year'] = date.year
+        post['month'] = date.month
+        post['day'] = date.day
+    else:
+        abort(404)
+    return render_template('post.html', post=post)
 
 @app.route("/apps")
 def apps():

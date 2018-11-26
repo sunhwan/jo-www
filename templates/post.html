@@ -1,0 +1,11 @@
+{% extends "hello.html" %}
+
+{% block post %}
+<div class="article">
+    <h2>{{ post.title }}</h2>
+    <span class="date">{{ post.date }}</span> <a href="#">∞</a>
+    <p>{{ post.content|safe }}</p>
+</div>
+
+<hr>
+{% endblock %}

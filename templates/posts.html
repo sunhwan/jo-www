@@ -4,7 +4,7 @@
 {% for post in posts %}
 <div class="article">
     <h2>{{ post.title }}</h2>
-    <span class="date">{{ post.date }}</span> <a href="#">∞</a>
+    <span class="date">{{ post.date }}</span> <a href="{{ url_for('post', year=post.year, month=post.month, day=post.day, filename=post.filename) }}">∞</a>
     <p>{{ post.content|safe }}</p>
 </div>
 
