@@ -12,11 +12,15 @@
         text-decoration: underline;
     }
 
+    h1 {
+        font-family: Georgia, Palatino, 'Palatino Linotype', Times, 'Times New Roman', serif;
+    }
+
     #masthead-background {
         height: 165px;
-        background-color: #372312;
+        /* background-color: #372312; */
         margin-bottom: -165px;
-        border-top: 3px solid #b59575;
+        border-top: 5px solid #0066ff;
     }
 
     .main {
@@ -27,7 +31,7 @@
     #masthead {
         width: 300px;
         font-size: 0.9em;
-        color: #f1e0d4;
+        color: #aaa;
     }
 
     #masthead h1 {
@@ -39,24 +43,31 @@
     }
 
     #masthead h1 a {
-        color: #fff;
+        color: #000;
         text-decoration: none;
     }
 
     #masthead p {
         margin: 0;
         padding: 0;
+        color: #000;
     }
 
     #masthead nav {
         display: block;
         margin: 0;
         padding: 1em 0;
-        color: #5c3b1e;
+        /* color: #5c3b1e; */
     }
 
     #masthead a {
-        color: #b59575;
+        color: #aaa;
+    }
+
+    .divider {
+        background: #0066ff;
+        height: 2px;
+        border: none;
     }
 
     #post {
@@ -89,6 +100,8 @@
             </nav>
         </div>
     </div>
+
+    <hr class="divider"/>
 </div>
 {% endblock %}
 
