@@ -16,6 +16,12 @@
         font-family: Georgia, Palatino, 'Palatino Linotype', Times, 'Times New Roman', serif;
     }
 
+    footer {
+        margin: 2em 0;
+        font-size: 0.8em;
+        text-align: center;
+    }
+
     #masthead-background {
         height: 165px;
         /* background-color: #372312; */
@@ -29,7 +35,7 @@
     }
 
     #masthead {
-        width: 300px;
+        width: 310px;
         font-size: 0.9em;
         color: #aaa;
     }
@@ -61,7 +67,7 @@
     }
 
     #masthead a {
-        color: #aaa;
+        /* color: #aaa; */
     }
 
     .divider {
@@ -73,6 +79,8 @@
     #post {
         width: 640px;
         margin: auto;
+        margin-top: 60px;
+        margin-bottom: 60px;
     }
 </style>
 {% endblock %}
@@ -86,7 +94,7 @@
         <div>
             <p id="description">
                 I&rsquo;m <a href="/about" rel="author">Sunhwan Jo</a>:
-                a programmer, scientist, writer, and geek.
+                This is my personal blog.
             </p>
 
             <nav>
@@ -103,12 +111,20 @@
 
     <hr class="divider"/>
 </div>
-{% endblock %}
+{% endblock navbar %}
 
-{% block content %}
+{%- block content %}
 <div class="container main">
     <div id="post">
-        Hello World!
+    {%- block post %}
+    {%- endblock post %}
     </div>
 </div>
-{% endblock %}
+
+{%- block footer %}
+<div class="container main">
+    <hr class="divider"/>
+    <footer>&copy; 2018 Sunhwan Jo</footer>
+</div>
+{%- endblock footer %}
+{%- endblock content %}

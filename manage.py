@@ -12,13 +12,13 @@ def hello():
 
 @app.route("/apps")
 def apps():
-    return render_template('hello.html')
+    return render_template('apps.html')
 
 @app.route("/publications")
 def publications():
-    return render_template('hello.html')
+    return render_template('publications.html')
 
 @app.route("/about")
 def about():
-    return render_template('hello.html')
+    return render_template('about.html')
 
