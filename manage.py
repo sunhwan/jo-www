@@ -3,13 +3,19 @@ from flask import render_template
 
 from flask_bootstrap import Bootstrap
 import yaml
+import markdown
 
 app = Flask(__name__)
 Bootstrap(app)
 
+md = markdown.Markdown(extensions = ['meta'])
+
 @app.route("/")
 def hello():
-    return render_template('hello.html')
+    posts = yaml.load(open("entries/entries.yaml").read())
+    for post in posts:
+        post['content'] = md.convert(open("entries/%s" % post['filename']).read())
+    return render_template('posts.html', posts=posts)
 
 @app.route("/apps")
 def apps():

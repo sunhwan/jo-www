@@ -1,0 +1,14 @@
+{% extends "hello.html" %}
+
+{% block post %}
+{% for post in posts %}
+<div class="article">
+    <h2>{{ post.title }}</h2>
+    <span class="date">{{ post.date }}</span> <a href="#">∞</a>
+    <p>{{ post.content|safe }}</p>
+</div>
+
+<hr>
+
+{% endfor %}
+{% endblock %}
