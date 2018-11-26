@@ -3,4 +3,46 @@
 {% block post %}
 <h2>Publications</h2>
 
+<p>
+This is a list of my academic publications. See my <a href="http://scholar.google.com/citations?user=yKZyFBsAAAAJ&hl=en">Google Scholar Profile</a> also.
+</p>
+
+<hr>
+
+<h3>Articles</h3>
+
+<ol>
+{% for pub in pubs.articles %}
+    <li class="pubs">
+        <span class="title">{{ pub.title }}</span><br>
+        <span class="author">{{ pub.authors|replace('Sunhwan Jo', '<b>Sunhwan Jo</b>')|safe }}.</span><br>
+        <span class="journal"><i>{{ pub.journal }}</i></span>
+        {% if pub.status %}<i>{{ pub.status }}</i>
+        {% else %}({{ pub.year }}) {% if pub.volume %}{{ pub.volume }}{% if pub.issue %}({{ pub.issue }}){% endif %}:{{ pub.pages }}{% endif %}
+        {% endif %}<br>
+        {% if pub.links %}[{{ pub.links|join(' | ')|safe }}]{% endif %}
+        </span>
+    </li>
+{% endfor %}
+</ol>
+
+<hr>
+
+<h3>Book chapters</h3>
+
+<ol>
+{% for pub in pubs.bookchapter %}
+    <li class="pubs">
+        <span class="title">{{ pub.title }}</span><br>
+        <span class="author">{{ pub.authors|replace('Sunhwan Jo', '<b>Sunhwan Jo</b>')|safe }}.</span><br>
+        <span class="journal"><i>{{ pub.book }}</i></span>
+        {% if pub.status %}<i>{{ pub.status }}</i>
+        {% else %}({{ pub.year }})
+        {% endif %}<br>
+        {% if pub.links %}[{{ pub.links|join(' | ')|safe }}]{% endif %}
+        </span>
+    </li>
+{% endfor %}
+</ol>
+
 {% endblock %}

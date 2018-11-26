@@ -1,0 +1,324 @@
+articles:
+-
+    title: CHARMM-GUI Input Generator for NAMD, GROMACS, AMBER, OpenMM, and CHARMM/OpenMM Simulations using the CHARMM36 Additive Force Field
+    authors: Jumin Lee, Xi Cheng, Jason M Swails, Min Sun Yeom, Peter Kenneth Eastman, Justin A Lemkul, Shuai Wei, Joshua Buckner, Jong Cheol Jeong, Yifei Qi, Sunhwan Jo, Vijay S Pande, David A Case, Charles L Brooks, Alexander D MacKerell, Jeffery B Klauda, Wonpil Im
+    journal: J. Chem. Theory Compute.
+    doi: 10.1021/acs.jctc.5b00935
+    year: 2015
+    website: http://charmm-gui.org
+-
+    title: Roles of Glycans in Interactions between gp120 and HIV Broadly Neutralizing Antibodies
+    authors: Yifei Qi, Sunhwan Jo, Wonpil Im
+    journal: Glycobiology
+    doi: 10.1093/glycob/cwv101
+    year: 2015
+-
+    title: Preferred Conformations of N-glycan Core Pentasaccharide in Solution and in Glycoproteins
+    authors: Sunhwan Jo, Yifei Qi, Wonpil Im
+    journal: Glycobiology
+    doi: 10.1093/glycob/cwv083
+    year: 2016
+    volume: 26
+    pages: 19-29
+-
+    title: A generic implementation of replica exchange with solute tempering (REST2) algorithm in NAMD for complex biophysical simulations
+    authors: Sunhwan Jo, Wei Jiang
+    journal: Compute. Phys. Comm.
+    doi: 10.1016/j.cpc.2015.08.030
+    year: 2015
+    volume: 197
+    pages: 304-311
+    git: https://github.com/sunhwan/NAMD-REST
+-
+    title: Efficient determination of relative entropy using combined temperature and Hamiltonian replica-exchange molecular dynamics
+    authors: Sunhwan Jo, Chris Chipot, Benoît Roux
+    journal: J. Chem. Theory Comput.
+    doi: 10.1016/j.bpj.2015.03.012
+    year: 2015
+    volume: 11
+    pages: 2234-2244
+    git: https://github.com/sunhwan/NAMD-replica
+-
+    title: GS-align for Glycan Structure Alignment and Similarity Measurement
+    authors: Hui Sun Lee, Sunhwan Jo, Srayanta Mukherjee, Sang-Jun Park, Jeffrey Skolnick, Jooyoung Lee, Wonpil Im
+    journal: Bioinformatics
+    doi: 10.1093/bioinformatics/btv202
+    year: 2015
+    pages: btv202
+-
+    title: Solid-State NMR Observable-based Ensemble Dynamics Simulations of Membrane Protein in Explicit Membranes
+    authors: Xi Cheng, Sunhwan Jo, Yifei Qi, Francesca M Marassi, and Wonpil Im
+    journal: Biophys. J.
+    doi: 10.1016/j.bpj.2015.03.012
+    year: 2015
+    volume: 108
+    pages: 1954-1962
+-
+    title: Lipid-Linked Oligosaccharides in Membranes Sample Conformations That Facilitate Binding to Oligosaccharyltransferase
+    authors: Nathan R Kern, Hui Sun Lee, Emilia L Wu, Soohyung Park, Kenno Vanommeslaeghe, Alexander D MacKerell, Jeffery B Klauda, Sunhwan Jo, Wonpil Im
+    journal: Biophys. J.
+    doi: 10.1016/j.bpj.2014.09.007
+    year: 2014
+    volume: 107
+    issue: 8
+    pages: 1885-1895
+-
+    title: CHARMM-GUI <i>Membrane Builder</i> toward realistic biological membrane simulations
+    authors: Emilia L Wu, Xi Cheng, Sunhwan Jo, Huan Rui, Kevin C Song, Eder M Davilia-Contreras, Yifei Qi, Jumin Lee, Viviana Monje-Galvan, Richard M Venable, Jeffery B Klauda, Wonpil Im
+    journal: J. Comput. Chem.
+    doi: 0.1002/jcc.23702
+    year: 2014
+    volume: 35
+    issue: 27
+    pages: 1997-2004
+    website: http://charmm-gui.org/input/membrane
+-
+    title: Exploring the Conformational Transitions of Biomolecular Systems Using a Simple Two-State Anisotropic Network Model
+    authors: Avisek Das, Mert Gur, Mary Hongying Cheng, Sunhwan Jo, Ivet Bahar, and Benoît Roux
+    journal: PLoS Comput. Biol.
+    doi: 10.1371/journal.pcbi.1003521
+    website: http://anmpathway.lcrc.anl.gov
+    year: 2014
+    volume: 10
+    issue: 4
+    pages: e1003521
+    git: https://github.com/sunhwan/pathfinder
+-
+    title: "ST‐analyzer: A web‐based user interface for simulation trajectory analysis"
+    authors: Jong Cheol Jeong, Sunhwan Jo, Emilia L Wu, Yifei Qi, Viviana Monje‐Galvan, Min Sun Yeom, Lev Gorenstein, Feng Chen, Jeffery B Klauda, Wonpil Im
+    journal: J. Comput. Chem.
+    website: http://im.bioinformatics.ku.edu/st-analyzer/
+    doi: 10.1002/jcc.23584
+    year: 2014
+    volume: 35
+    issue: 12
+    pages: 957-963
+-
+    title: CHARMM-GUI PACE CG Builder for Solution, Micelle, and Bilayer Coarse-Grained Simulations
+    authors: Yifei Qi, Xi Cheng, Wei Han, Sunhwan Jo, Klaus Schulten, and Wonpil Im
+    journal: J. Chem. Inf. Model.
+    website: http://www.charmm-gui.org/input/cgbilayer
+    doi: 10.1021/ci500007n
+    year: 2014
+    volume: 54
+    issue: 3
+    pages: 1003-1009
+-
+    title: Molecular Dynamics and NMR Spectroscopy Studies of <i>E. coli</i> Lipopolysaccharide Structure and Dynamics
+    authors: Emilia L Wu, Olof Engström, Sunhwan Jo, Danielle Stuhlsatz, Min Sun Yeom, Jeffery B Klauda, Göran Widmalm, and Wonpil Im
+    journal: Biophys. J.
+    doi: 10.1016/j.bpj.2013.08.002
+    year: 2013
+    volume: 105
+    issue: 6
+    pages: 1444-1455
+-
+    title: CHARMM-GUI Micelle Builder for Pure/Mixed Micelle and Protein/Micelle Complex Systems
+    authors: Xi Cheng, Sunhwan Jo, Hui Sun Lee, Jeffrey Klauda, and Wonpil Im
+    journal: J. Chem. Inf. Model.
+    website: http://www.charmm-gui.org/input/micelle
+    doi: 10.1021/ci4002684
+    year: 2013
+    volume: 53
+    issue: 8
+    pages: 2171-2180
+    pdf: J._Chem._Inf._Model._2013_Cheng.pdf
+-
+    title: NMR-Based simulation studies of pf1 coat protein in explicit membranes
+    authors: Xi Cheng, Sunhwan Jo, Francesca M Marassi, Wonpil Im
+    journal: Biophys. J.
+    doi: 10.1016/j.bpj.2013.08.002
+    year: 2013
+    volume: 105
+    issue: 3
+    pages: 691-698
+-
+    title: Restricted N-glycan Conformational Space in the PDB and Its Implication in Glycan Structure Modeling
+    authors: Sunhwan Jo, Hui Sun Lee, Jeffrey Skolnick, and Wonpil Im
+    journal: PLoS Comput. Biol.
+    year: 2013
+    volume: 9
+    issue: 3
+    pages: e1002946
+    doi: 10.1371/journal.pcbi.1002946
+-
+    title: CHARMM-GUI Ligand Binder for Absolute Binding Free Energy Calculations and Its Application
+    authors: Sunhwan Jo, Wei Jiang, Hui Sun Lee, Benoît Roux, and Wonpil Im
+    year: 2013
+    journal: J. Chem. Inf. Model.
+    website: http://www.charmm-gui.org/input/gbind
+    volume: 53
+    issue: 1
+    pages: 267-277
+    doi: 10.1021/ci300505n
+-
+    title: "Glycan Fragment DB: A Database of PDB-Based Glycan 3D Structures"
+    authors: Sunhwan Jo and Wonpil Im
+    year: 2013
+    journal: Nucleic Acid Res.
+    volume: 41
+    issue: D1
+    pages: D470-D474
+    website: http://glycanstructure.org/fragment
+    doi: 10.1093/nar/gks987
+-
+    title: Application of Absolute Binding Free Energy Calculations to Prediction of Binding Modes and Affinities of MDM2 and MDMX Inhibitors
+    authors: Hui Sun Lee, Sunhwan Jo, Hyun-Suk Lim, and Wonpil Im
+    year: 2012
+    journal: J. Chem. Inf. Model.
+    volume: 52
+    issue: 7
+    pages: 1821-1832
+    doi: 10.1021/ci3000997
+-
+    title: The Salmonella Type III Secretion System Inner Rod Protein PrgJ Is Partially Folded
+    authors: Dalian Zhong, Matthew Lefebre, Kawaljit Kaur, Melanie A McDowell, Courtney Godwski, Sunhwan Jo, Yu Wang, Stephen H Benedict, Susan M Lea, Jorge E Galan, and Roberto De. Guzman
+    year: 2012
+    journal: J. Biol. Chem
+    volume: 287
+    issue: 30
+    pages: 25303-25311
+    doi: 10.1074/jbc.M112.381574
+-
+    title: "Molecular Dynamics Simulation of the Cx26 Hemichannel: Insight Into Voltage-Dependent Loop-Gating"
+    authors: Taekyung Kwon, Benoît Roux, Sunhwan Jo, Jeffery B. Klauda, Andrew L. Harris, and Thaddeus A. Bargiello
+    year: 2012
+    journal: Biophys. J.
+    volume: 102
+    issue: 6
+    pages: 1341-1351 (Selected as cover)
+    doi: 10.1016/j.bpj.2012.02.009
+-
+    title: Web Interface for Brownian Dynamics Simulation of Ion Transport and Its Applications to Beta-Barrel Pores
+    authors: Kyuil Lee, Sunhwan Jo, Huan Rui, Bernhard Egwolf, Benoît Roux, Richard Paster, and Wonpil Im
+    year: 2012
+    journal: J. Comput. Chem.
+    volume: 33
+    issue: 3
+    pages: 331-339 (Selected as cover)
+    website: http://charmm-gui.org/input/gcmcbd
+    doi: 10.1002/jcc.21952
+-
+    title: An Ensemble Dynamics Approach to Decipher Solid-state NMR Observables of Membrane Proteins
+    authors: Wonpil Im, Sunhwan Jo, and Taehoon Kim
+    year: 2012
+    journal: Biochim. Biophys. Acta
+    volume: 1818
+    issue: 2
+    pages: 252-262
+    doi: 10.1016/j.bbamem.2011.07.048
+-
+    title: "Glycan Reader: Automated Sugar Identification and Simulation Preparation for Carbohydrates and Glycoproteins"
+    authors: Sunhwan Jo, Kevin Song, Heather Desaire, Alexander D. MacKerell, Jr., and Wonpil Im
+    year: 2011
+    journal: J. Comput. Chem.
+    volume: 32
+    issue: 14
+    pages: 3135-3141 (Selected as cover)
+    website: http://charmm-gui.org/input/glycan
+    doi: 10.1002/jcc.21886
+-
+    title: "Transmembrane Helix Orientation and Dynamics: Insights from Ensemble Dynamics with Solid-State NMR Observables"
+    authors: Sunhwan Jo and Wonpil Im
+    year: 2011
+    journal: Biophys. J.
+    volume: 100
+    issue: 12
+    pages: 2913-2921
+    doi: 10.1016/j.bpj.2011.05.009
+-
+    title: Solid-State NMR Ensemble Dynamics as a Mediator between Experiment and Simulation
+    authors: Taehoon Kim, Sunhwan Jo, Wonpil Im
+    year: 2011
+    journal: Biophys. J.
+    volume: 100
+    issue: 12
+    pages: 2922-2928
+    doi: 10.1016/j.bpj.2011.02.063
+-
+    title: "Novel Pyrrolopyrimidine-Based α-Helix Mimetics: Cell-Permeable Inhibitors of Protein-Protein Interactions"
+    authors: Ji Hoon Lee, Qi Zhang, Sunhwan Jo, Sergio Cha, Misook Oh, Wonpil Im, Hua Lu, Hyun-Suk Lim
+    year: 2011
+    journal: J Am. Chem. Soc.
+    volume: 33
+    issue: 4
+    pages: 676-679
+    doi: 10.1021/ja108230s
+-
+    title: "Cholesterol flip-flop: insights from free energy simulation studies"
+    authors: Sunhwan Jo, Huan Rui, Joseph. B. Lim, Jeffrey B. Klauda, Wonpil Im
+    year: 2010
+    journal: J. Phys. Chem. B.
+    volume: 114
+    issue: 42
+    pages: 13342-13348
+    doi: 10.1021/jp108166k
+-
+    title: CHARMM-GUI Membrane Builder for Mixed Bilayers and Its application to Yeast Membrane
+    authors: Sunhwan Jo, Joseph B. Lim, Jeffery B. Klauda, and Wonpil Im
+    year: 2009
+    journal: Biophys. J.
+    volume: 97
+    issue: 1
+    pages: 50-58
+    website: http://charmm-gui.org/input/membrane
+    doi: 10.1016/j.bpj.2009.04.013
+-
+    title: PBEQ-Solver for Online Visualization of Electrostatic Potential of Biomolecules
+    authors: Sunhwan Jo, Miklos Vargyas, Judit Vasko-Szedlar, Benoît Roux, and Wonpil Im
+    year: 2008
+    journal: Nucleic Acids Res
+    volume: 36
+    issue: Web Server Issue
+    pages: W270-W275
+    website: http://charmm-gui.org/input/pbeqsolver
+    doi: 10.1093/nar/gkn314
+-
+    title: "CHARMM-GUI: Web-based Graphical User Interface for CHARMM"
+    authors: Sunhwan Jo, Taehoon Kim, Vidyashankara G. Iyer, and Wonpil Im
+    year: 2008
+    journal: J. Comput. Chem.
+    volume: 29
+    issue: 11
+    pages: 1859-1865
+    website: http://charmm-gui.org
+    doi: 10.1002/jcc.20945
+-
+    title: Automated Builder and Database of Protein/Membrane Complexes for Molecular Dynamics Simulations
+    authors: Sunhwan Jo, Taehoon Kim, and Wonpil Im
+    year: 2007
+    journal: PLoS ONE
+    volume: 2
+    issue: 9
+    pages: e880
+    website: http://charmm-gui.org/input/membrane
+    doi: 10.1371/journal.pone.0000880
+    pdf: PLoS ONE 2007 Jo.pdf
+
+bookchapter:
+-
+    title: Lipopolysaccharide Membrane Building and Simulation.
+    authors: Sunhwan Jo, Emilia Wu, Danielle Stuhlsatz, Jeffery B. Klauda, Göran Wildmalm, and Wonpil Im
+    year: 2015
+    book: "Methods in Molecular Biology: Glycoinformatics"
+    doi: 10.1007/978-1-4939-2343-4_24
+-
+    title: Molecular Dynamics Simulations of Glycoproteins using CHARMM.
+    authors: Sairam S. Mallajosyula, Sunhwan Jo, Wonpil Im, and Alexander D. MacKerell, Jr.
+    year: 2015
+    book: "Methods in Molecular Biology: Glycoinformatics"
+    doi: 10.1007/978-1-4939-2343-4_25
+    pdf: Methods Mol. Biol. 2015 Mallajosyula.pdf 
+- 
+    title: CHARMM-GUI PDB Manipulator for Advanced Modeling and Simulations of Proteins Containing Nonstandard Residues.
+    authors: Sunhwan Jo, Xi Cheng, Shahidul M. Islam, Lei Huang, Huan Rui, Allen Zhu, Hui Sun Lee, Yifei Qi, Wei Han, Kenno Vanommeslaeghe, Alexander D. MacKerell Jr., Benoît Roux, Wonpil Im
+    year: 2015
+    book: "Advances in Protein Chemistry and Structural Biology"
+    doi: 10.1016/bs.apcsb.2014.06.002
+-
+    title: Computational Studies of Glycan Conformations in Glycoproteins
+    authors: Sunhwan Jo
+    year: 2015
+    book: "Ph.D. Thesis"
+    doi: 1808/14212
+
