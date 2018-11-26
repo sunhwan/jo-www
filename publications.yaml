@@ -1,5 +1,53 @@
 articles:
 -
+    title: "Multiple Conformational States Contribute to the 3D Structure of a Glucan Decasaccharide: A Combined SAXS and MD Simulation Study"
+    authors: Sunhwan Jo, Daniel Myatt, Yifei Qi, James Doutch, Luke A Clifton, Wonpil Im, Göran Widmalm
+    journal: J. Phys. Chem. B
+    doi: 10.1021/acs.jpcb.7b11085
+    year: 2018
+    volume: 122
+    pages: 1169-1175
+-
+    title: Constant-pH Molecular Dynamics Simulations for Large Biomolecular Systems
+    authors: Brian K Radak, Christophe Chipot, Donghyuk Suh, Sunhwan Jo, Wei Jiang, James C Phillips, Klaus Schulten, Benoît Roux
+    journal: J. Chem. Theory Compute.
+    doi: 10.1021/acs.jctc.7b00875
+    year: 2017
+    volume: 13
+    pages: 5933-5944
+-
+    title: Glycan Reader is improved to recognize most sugar types and chemical modifications in the Protein Data Bank
+    authors: Sang-Jun Park, Jumin Lee, Dhilon S Patel, Hongjing Ma, Hui Sun Lee, Sunhwan Jo, Wonpil Im
+    journal: Bioinformatics
+    doi: 10.1093/bioinformatics/btx358
+    year: 2017
+    volume: 33
+    pages: 3051–3057
+-
+    title: CHARMM‐GUI ligand reader and modeler for CHARMM force field generation of small molecules
+    authors: Seonghoon Kim, Jumin Lee, Sunhwan Jo, Charles L Brooks III, Hui Sun Lee, Wonpil Im
+    journal: J. Comput. Chem.
+    doi: 10.1002/jcc.24829 
+    year: 2017
+    volume: 38
+    pages: 1879-1886
+-
+    title: CHARMM‐GUI 10 years for biomolecular modeling and simulation
+    authors: Sunhwan Jo, Xi Cheng, Jumin Lee, Seonghoon Kim, Sang‐Jun Park, Dhilon S Patel, Andrew H Beaven, Kyu Il Lee, Huan Rui, Soohyung Park, Hui Sun Lee, Benoît Roux, Alexander D MacKerell Jr, Jeffrey B Klauda, Yifei Qi, Wonpil Im
+    journal: J. Comput. Chem.
+    doi: 10.1002/jcc.24660 
+    year: 2017
+    volume: 38
+    pages: 1114-1124
+-
+    title: Leveraging the Information from Markov State Models to Improve the Convergence of Umbrella Sampling Simulations
+    authors: Sunhwan Jo, Donghyuk Suh, Ziwei He, Christophe Chipot, Benoît Roux
+    journal: J. Phys. Chem. B
+    doi: 10.1021/acs.jpcb.6b05125
+    year: 2016
+    volume: 120
+    pages: 8733-8742
+-
     title: CHARMM-GUI Input Generator for NAMD, GROMACS, AMBER, OpenMM, and CHARMM/OpenMM Simulations using the CHARMM36 Additive Force Field
     authors: Jumin Lee, Xi Cheng, Jason M Swails, Min Sun Yeom, Peter Kenneth Eastman, Justin A Lemkul, Shuai Wei, Joshua Buckner, Jong Cheol Jeong, Yifei Qi, Sunhwan Jo, Vijay S Pande, David A Case, Charles L Brooks, Alexander D MacKerell, Jeffery B Klauda, Wonpil Im
     journal: J. Chem. Theory Compute.
