@@ -1,2 +1,3 @@
 # jo-www
-personal webpage
+
+This is my personal webpage hosted on sunhwanj.heroku.com
