@@ -77,6 +77,12 @@ def publications():
 
     return render_template('publications.html', pubs=pubs)
 
+@app.route('/hooks/publications', methods=['POST'])
+def pubhook():
+   data = json.loads(request.data)
+   print "New commit by: {}".format(data['commits'][0]['author']['name'])
+   return "OK"
+
 @app.route("/about")
 def about():
     return render_template('about.html')
