@@ -12,7 +12,17 @@ import dateparser
 app = Flask(__name__)
 Bootstrap(app)
 
+config = configparser.ConfigParser()
+config.read('config.ini')
+
 md = markdown.Markdown(extensions = ['meta'])
+
+def validate_signature(key, body, signature):
+    signature_parts = signature.split('=')
+    if signature_parts[0] != "sha1":
+        return False
+    generated_sig = hmac.new(str.encode(key), msg=body, digestmod=hashlib.sha1)
+    return hmac.compare_digest(generated_sig.hexdigest(), signature_parts[1])
 
 @app.route("/")
 def hello():
@@ -77,11 +87,18 @@ def publications():
 
     return render_template('publications.html', pubs=pubs)
 
-@app.route('/hooks/publications', methods=['POST'])
+@app.route('/hooks/publications')
 def pubhook():
-   data = json.loads(request.data)
-   print("New commit by: {}".format(data['commits'][0]['author']['name']))
-   return "OK"
+    secret_key = config['default']['secret_key']
+    text_body = request.get_data()
+    github_signature = request.headers['x-hub-signature']
+    print(github_signature)
+    if not validate_signature(secret_key, text_body, github_signature):
+        return jsonify(success=False, message='Invalid GitHub signature'), 403
+        
+    g = git.cmd.Git()
+    g.pull()
+    return "OK"
 
 @app.route("/about")
 def about():
