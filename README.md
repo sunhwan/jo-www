@@ -8,5 +8,6 @@ I'm using gitsubmodule to load publications and blog entries. To have submodule 
 
     heroku buildpacks:add --index 1 https://github.com/SectorLabs/heroku-buildpack-git-submodule.git 
     heroku config:set GIT_REPO_URL=git@github.com:sunhwan/jo-www.git
+    heroku config:set GIT_SSH_KEY="$(cat ~/.ssh/id_rsa)"
 
 See https://github.com/SectorLabs/heroku-buildpack-git-submodule for more information.
