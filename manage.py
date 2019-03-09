@@ -89,6 +89,14 @@ def publications():
 
     return render_template('publications.html', pubs=pubs)
 
+@app.route('/hooks/submodule')
+def submodulehook():
+    # update all submodule 
+    repo = git.Repo('.')
+    for submodule in repo.submodules:
+        submodule.update(init=True)
+    return "OK"
+
 @app.route('/hooks/publications')
 def pubhook():
     secret_key = config['default']['secret_key']
