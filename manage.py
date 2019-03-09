@@ -58,7 +58,7 @@ def apps():
 
 @app.route("/publications")
 def publications():
-    pubs = yaml.load(open("publications.yaml").read())
+    pubs = yaml.load(open("pubs/publications.yaml").read())
 
     for pub in pubs['articles']:
         links = []
@@ -96,7 +96,8 @@ def pubhook():
     if not validate_signature(secret_key, text_body, github_signature):
         return jsonify(success=False, message='Invalid GitHub signature'), 403
         
-    g = git.cmd.Git()
+    # update publication repository
+    g = git.cmd.Git('pubs')
     g.pull()
     return "OK"
 
