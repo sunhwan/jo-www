@@ -10,6 +10,7 @@ import yaml
 import markdown
 import dateparser
 import configparser
+import git
 
 app = Flask(__name__)
 Bootstrap(app)
