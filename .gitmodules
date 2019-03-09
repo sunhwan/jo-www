@@ -1,0 +1,3 @@
+[submodule "pubs"]
+	path = pubs
+	url = git@github.com:sunhwan/jo-pubs.git
