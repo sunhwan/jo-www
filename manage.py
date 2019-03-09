@@ -80,7 +80,7 @@ def publications():
 @app.route('/hooks/publications', methods=['POST'])
 def pubhook():
    data = json.loads(request.data)
-   print "New commit by: {}".format(data['commits'][0]['author']['name'])
+   print("New commit by: {}".format(data['commits'][0]['author']['name']))
    return "OK"
 
 @app.route("/about")
