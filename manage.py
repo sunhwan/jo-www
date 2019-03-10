@@ -90,7 +90,7 @@ def publications():
 
     return render_template('publications.html', pubs=pubs)
 
-@app.route('/hooks/publications', method="POST")
+@app.route('/hooks/publications', methods=['POST'])
 def pubhook():
     secret_key = config['default']['secret_key']
     text_body = request.get_data()
