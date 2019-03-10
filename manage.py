@@ -93,7 +93,7 @@ def publications():
 @app.route('/hooks/publications', methods=['POST'])
 def pubhook():
     #secret_key = config['default']['secret_key']
-    secret_key = os.env.get('GITHUB_SECRET_KEY')
+    secret_key = os.getenv('GITHUB_SECRET_KEY')
     text_body = request.get_data()
     github_signature = request.headers['x-hub-signature']
     print(github_signature)
