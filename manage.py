@@ -9,14 +9,14 @@ from flask_bootstrap import Bootstrap
 import yaml
 import markdown
 import dateparser
-import configparser
+#import configparser
 import git
 
 app = Flask(__name__)
 Bootstrap(app)
 
-config = configparser.ConfigParser()
-config.read('config.ini')
+#config = configparser.ConfigParser()
+#jconfig.read('config.ini')
 
 md = markdown.Markdown(extensions = ['meta'])
 
@@ -92,7 +92,8 @@ def publications():
 
 @app.route('/hooks/publications', methods=['POST'])
 def pubhook():
-    secret_key = config['default']['secret_key']
+    #secret_key = config['default']['secret_key']
+    secret_key = os.env.get('GITHUB_SECRET_KEY')
     text_body = request.get_data()
     github_signature = request.headers['x-hub-signature']
     print(github_signature)
