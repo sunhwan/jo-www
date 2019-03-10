@@ -98,8 +98,8 @@ def pubhook():
     text_body = request.get_data()
     github_signature = request.headers['x-hub-signature']
     print(github_signature)
-    if not validate_signature(secret_key, text_body, github_signature):
-        return jsonify(success=False, message='Invalid GitHub signature'), 403
+    #if not validate_signature(secret_key, text_body, github_signature):
+    #    return jsonify(success=False, message='Invalid GitHub signature'), 403
         
     # update publication repository
     g = git.cmd.Git('pubs')
