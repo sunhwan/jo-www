@@ -4,29 +4,16 @@ import hmac, hashlib
 from flask import Flask, request
 from flask import render_template
 from flask import abort
-from flask.json import jsonify
 
 from flask_bootstrap import Bootstrap
 import yaml
 import markdown
 import dateparser
-#import configparser
-import git
 
 app = Flask(__name__)
 Bootstrap(app)
 
-#config = configparser.ConfigParser()
-#jconfig.read('config.ini')
-
 md = markdown.Markdown(extensions = ['meta'])
-
-def validate_signature(key, body, signature):
-    signature_parts = signature.split('=')
-    if signature_parts[0] != "sha1":
-        return False
-    generated_sig = hmac.new(str.encode(key), msg=body, digestmod=hashlib.sha1)
-    return hmac.compare_digest(generated_sig.hexdigest(), signature_parts[1])
 
 @app.route("/")
 def hello():
@@ -90,21 +77,6 @@ def publications():
             pub['links'].append("<a href='%s'>%s</a>" % (url, title))
 
     return render_template('publications.html', pubs=pubs)
-
-@app.route('/hooks/publications', methods=['POST'])
-def pubhook():
-    #secret_key = config['default']['secret_key']
-    secret_key = os.getenv('GITHUB_SECRET_KEY')
-    text_body = request.get_data()
-    github_signature = request.headers['x-hub-signature']
-    print(github_signature)
-    #if not validate_signature(secret_key, text_body, github_signature):
-    #    return jsonify(success=False, message='Invalid GitHub signature'), 403
-        
-    # update publication repository
-    g = git.cmd.Git('pubs')
-    g.pull()
-    return "OK"
 
 @app.route("/about")
 def about():
