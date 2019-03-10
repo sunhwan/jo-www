@@ -4,6 +4,7 @@ import hmac, hashlib
 from flask import Flask, request
 from flask import render_template
 from flask import abort
+from fask.json import jsonify
 
 from flask_bootstrap import Bootstrap
 import yaml
